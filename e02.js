@@ -1,8 +1,13 @@
-const IsAPangrams = require('./e01') 
-
 function IsAPangrams(str) {
-    if str realPangram(true)
-    else notRealPangram(falsee)
-}
-console.log(IsAPangrams)
+    var input = "";
+    let alpha = 'abcdefghijklmnopqrstuvwxyz'
+    input = input.toLowerCase();
+    for (let i = 0; i < alpha.length; i++){
+        if (input.indexOf(alpha.charAt(i)) === -1){
+            return console.log('NotPangrams')
+    
+            }
+        }
 
+        return console.log('isAPangrams');
+    }

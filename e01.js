@@ -1,3 +1,8 @@
-const howManyCamelCase = require('./e01')
-
-const result = howManyCamelCase ('BonjourJeSuisPonch')
+function howManyCamelCase(str) {
+    const re = /[A-Z]/g;
+    let wordSplit = s.split(re);
+    
+    return wordSplit.length;
+    
+  }
+  console.log('Bonjour Je Suis Ponch')
