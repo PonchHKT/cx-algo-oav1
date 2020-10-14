@@ -1,2 +1,3 @@
-const howManyCamelCase = require('./e01')
+const IsAPangramse = require('./e01')
 const howManyCamelCase = require('./e02')
+const Marsos = require('./e03')
