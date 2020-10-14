@@ -1,8 +1,23 @@
-function howManyCamelCase(str) {
-    const re = /[A-Z]/g;
-    let wordSplit = s.split(re);
-    
-    return wordSplit.length;
-    
+function isUpperCase(code) {
+    return (code >= 65 && code <= 90)
   }
-  console.log('Bonjour Je Suis Ponch')
+  
+  function howManyCamelCase(str) {
+    if (!str) {
+      return 0
+    }
+  
+    let count = 1 // je
+  
+    for (let i = 0; i < str.length; i++) {
+      const charCode = str.charCodeAt(i)
+  
+      if (isUpperCase(charCode)) {
+        count++
+      }
+    }
+  
+    return count
+  }
+  console.log(howManyCamelCase)
+  console.log(isUpperCase)
